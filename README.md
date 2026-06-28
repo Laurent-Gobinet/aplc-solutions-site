@@ -1,5 +1,8 @@
-# APLC Solutions - V2 Premium
+# APLC Solutions - V4 Photos & Logos
 
-Mise à jour avec sections Vos enjeux et Références & expérience.
+Version V4 avec :
+- toutes les photos intégrées localement dans `/public` ;
+- suppression de DAHER et CNES dans les références ;
+- références présentées sous forme de logos/wordmarks stylisés.
 
-Conserver l'arborescence app/ et public/ lors de l'upload GitHub.
+Note : les logos sont des wordmarks stylisés pour éviter d'intégrer des fichiers de marques non fournis. Ils pourront être remplacés par les logos officiels si les fichiers sources sont transmis.

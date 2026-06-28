@@ -2,11 +2,11 @@ const photo = (query: string, w = 1400, h = 900) =>
   `https://source.unsplash.com/${w}x${h}/?${encodeURIComponent(query)}`;
 
 const projects = [
-  { img: photo('satellite dish antenna space industry'), title: 'ANCHOR', text: 'Transformer des innovations en réussite industrielle.', tags: 'Innovation industrielle · Spatial · Défense · Composites' },
-  { img: photo('ship propeller dry dock marine industry'), title: 'ADOUR', text: 'Structurer une acquisition créatrice de valeur.', tags: 'Industrie navale · Croissance externe' },
-  { img: photo('investment committee boardroom business'), title: 'CAP200', text: "Construire une plateforme d'investissement régional.", tags: 'Investisseurs · PME · Territoires' },
-  { img: photo('luxury fashion runway show'), title: 'GIDDY UP FASHION NIGHT', text: "Créer une marque internationale d'événementiel et de média.", tags: 'Mode · Luxe · Média · Événementiel' },
-  { img: photo('modern industrial workshop robotics'), title: 'NEOPOLIA', text: "Développer un écosystème industriel créateur d'opportunités.", tags: 'Industrie · Innovation · Réseau' },
+  { img: '/photo-anchor.jpg', title: 'ANCHOR', text: 'Transformer des innovations en réussite industrielle.', tags: 'Innovation industrielle · Spatial · Défense · Composites' },
+  { img: '/photo-adour.jpg', title: 'ADOUR', text: 'Structurer une acquisition créatrice de valeur.', tags: 'Industrie navale · Croissance externe' },
+  { img: '/photo-cap200.jpg', title: 'CAP200', text: "Construire une plateforme d'investissement régional.", tags: 'Investisseurs · PME · Territoires' },
+  { img: '/photo-giddy.jpg', title: 'GIDDY UP FASHION NIGHT', text: "Créer une marque internationale d'événementiel et de média.", tags: 'Mode · Luxe · Média · Événementiel' },
+  { img: '/photo-neopolia.jpg', title: 'NEOPOLIA', text: "Développer un écosystème industriel créateur d'opportunités.", tags: 'Industrie · Innovation · Réseau' },
 ];
 
 const issues = [
@@ -18,7 +18,23 @@ const issues = [
   ['Réorganisation', "Mobiliser les équipes et sécuriser la mise en œuvre."],
 ];
 
-const references = ['Thales', 'Airbus', 'Airbus Atlantic', "Chantiers de l'Atlantique", 'Manitou Group', 'Gestal', 'Sabena Technics', 'Daher', 'CNES', 'Neopolia'];
+const references = [
+  { name: 'THALES', className: 'logo-thales' },
+  { name: 'AIRBUS', className: 'logo-airbus' },
+  { name: 'AIRBUS ATLANTIC', className: 'logo-atlantic' },
+  { name: "CHANTIERS DE L'ATLANTIQUE", className: 'logo-chantiers' },
+  { name: 'MANITOU GROUP', className: 'logo-manitou' },
+  { name: 'GESTAL', className: 'logo-gestal' },
+  { name: 'SABENA TECHNICS', className: 'logo-sabena' },
+  { name: 'NEOPOLIA', className: 'logo-neopolia' },
+];
+
+
+const insights = [
+  ['Transmission', "Préparer une cession ne commence pas au moment de vendre. Elle se construit en amont."],
+  ['Acquisition', "La réussite d'une acquisition se joue autant après le closing que pendant la négociation."],
+  ['Levée de fonds', "Un investisseur finance une trajectoire crédible, pas seulement une ambition."],
+];
 
 const timeline = [
   ['THALES', 'Responsable des Coopérations Grands Comptes'],
@@ -75,7 +91,7 @@ export default function Home() {
             <article><h3>Une vision de dirigeant</h3><p>Nous parlons le même langage que les dirigeants que nous accompagnons.</p></article>
             <article><h3>De la stratégie au déploiement</h3><p>Nous restons engagés jusqu'à la concrétisation de la valeur.</p></article>
           </div></div>
-          <div className="why-photo"><img src={photo('executive meeting industrial office')} alt="Réunion de travail stratégique" /></div>
+          <div className="why-photo"><img src="/photo-pourquoi-aplc.jpg" alt="Réunion de travail stratégique" /></div>
         </div></section>
 
         <section className="quote-band"><div className="container"><p>Créer de la valeur est une ambition.<br />La concrétiser est une méthode.</p></div></section>
@@ -87,12 +103,25 @@ export default function Home() {
 
         <section id="references" className="references"><div className="container">
           <p className="section-kicker">Références & expérience</p><h2>Une expérience acquise auprès d'organisations industrielles exigeantes.</h2>
-          <div className="ref-grid">{references.map((r) => <span key={r}>{r}</span>)}</div>
+          <div className="ref-grid">{references.map((r) => <span className={r.className} key={r.name}>{r.name}</span>)}</div>
         </div></section>
 
         <section id="parcours" className="career"><div className="container"><h2>Mon parcours de dirigeant</h2><div className="accent" /><div className="timeline">{timeline.map(([company, role]) => <div key={company}><strong>{company}</strong><span>{role}</span></div>)}</div><p className="career-quote">Parce que les meilleures décisions sont prises par ceux qui ont déjà vécu les enjeux de l'entreprise.</p></div></section>
 
-        <section id="contact" className="contact-section"><div className="contact-photo"><img src={photo('outdoor business meeting landscape')} alt="Rencontre professionnelle en extérieur" /></div><div className="container contact-grid"><div className="contact-card"><h2>Échangeons.</h2><div className="accent" /><p>Vous préparez une décision stratégique ? Prenons une heure pour échanger sur votre projet, en toute confidentialité.</p></div><div className="contact-details"><p>☎ <a href="tel:+33630255807">06 30 25 58 07</a></p><p>✉ <a href="mailto:laurent.gobinet@aplc-solutions.fr">laurent.gobinet@aplc-solutions.fr</a></p><p>⌖ Basé à Nantes<br />Interventions en France et à l'international</p><p>in <a href="https://www.linkedin.com/in/laurent-gobinet-21663930" target="_blank" rel="noopener">linkedin.com/in/laurent-gobinet</a></p></div><div className="qr"><img src="/qr-contact-laurent-gobinet.png" alt="QR code contact Laurent Gobinet" /><span>Ajouter à vos contacts</span></div></div></section>
+
+        <section className="insights"><div className="container">
+          <p className="section-kicker">Regards de dirigeant</p>
+          <h2>Des analyses concrètes pour préparer les décisions qui engagent l'avenir.</h2>
+          <div className="insight-grid">{insights.map(([title, text]) => <article key={title}><span>{title}</span><p>{text}</p></article>)}</div>
+        </div></section>
+
+        <section className="final-cta"><div className="container">
+          <h2>Vous préparez une décision stratégique ?</h2>
+          <p>Prenons une heure pour comprendre votre projet, vos enjeux et les conditions de réussite.</p>
+          <a className="btn primary" href="#contact">Demander un premier échange <span>→</span></a>
+        </div></section>
+
+        <section id="contact" className="contact-section"><div className="contact-photo"><img src="/photo-contact-rencontre.jpg" alt="Rencontre professionnelle en extérieur" /></div><div className="container contact-grid"><div className="contact-card"><h2>Échangeons.</h2><div className="accent" /><p>Vous préparez une décision stratégique ? Prenons une heure pour échanger sur votre projet, en toute confidentialité.</p></div><div className="contact-details"><p>☎ <a href="tel:+33630255807">06 30 25 58 07</a></p><p>✉ <a href="mailto:laurent.gobinet@aplc-solutions.fr">laurent.gobinet@aplc-solutions.fr</a></p><p>⌖ Basé à Nantes<br />Interventions en France et à l'international</p><p>in <a href="https://www.linkedin.com/in/laurent-gobinet-21663930" target="_blank" rel="noopener">linkedin.com/in/laurent-gobinet</a></p></div><div className="qr"><img src="/qr-contact-laurent-gobinet.png" alt="QR code contact Laurent Gobinet" /><span>Ajouter à vos contacts</span></div></div></section>
       </main>
 
       <footer><div className="container footer-grid"><img src="/logo-aplc-chrome-small.png" alt="APLC" /><p>Anticiper aujourd'hui,<br />créer de la valeur demain.</p><p>© APLC Solutions – Tous droits réservés</p></div></footer>

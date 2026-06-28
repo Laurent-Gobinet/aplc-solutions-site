@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "APLC Solutions | Anticiper aujourd'hui, créer de la valeur demain",
   description: "APLC Solutions accompagne les dirigeants de PME et d'ETI dans leurs décisions stratégiques, de la préparation jusqu'au déploiement opérationnel.",
   metadataBase: new URL('https://aplc-solutions.fr'),
+  icons: { icon: '/favicon.svg' },
   openGraph: {
     title: "APLC Solutions",
     description: "Anticiper aujourd'hui, créer de la valeur demain.",
