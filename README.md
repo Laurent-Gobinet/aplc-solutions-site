@@ -1,5 +1,5 @@
-# APLC Solutions - Version 1.0 Premium
+# APLC Solutions - V2 Premium
 
-Projet Next.js prêt pour Vercel.
+Mise à jour avec sections Vos enjeux et Références & expérience.
 
-Conservez l'arborescence app/ et public/ lors de l'upload GitHub.
+Conserver l'arborescence app/ et public/ lors de l'upload GitHub.
