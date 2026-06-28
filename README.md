@@ -1,8 +1,15 @@
-# APLC Solutions - V4 Photos & Logos
+# APLC Solutions - V5 Real Logos
 
-Version V4 avec :
-- toutes les photos intégrées localement dans `/public` ;
-- suppression de DAHER et CNES dans les références ;
-- références présentées sous forme de logos/wordmarks stylisés.
+Version V5 avec :
+- logos réels fournis intégrés dans `/public` ;
+- références simplifiées : Airbus uniquement, sans Airbus Atlantic ;
+- suppression de DAHER et CNES ;
+- références affichées sous forme de cartes logos.
 
-Note : les logos sont des wordmarks stylisés pour éviter d'intégrer des fichiers de marques non fournis. Ils pourront être remplacés par les logos officiels si les fichiers sources sont transmis.
+Références incluses :
+- Airbus
+- Thales
+- Manitou Group
+- Chantiers de l'Atlantique
+- Gestal
+- Gereje Corporate Finance

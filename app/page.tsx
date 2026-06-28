@@ -19,14 +19,12 @@ const issues = [
 ];
 
 const references = [
-  { name: 'THALES', className: 'logo-thales' },
-  { name: 'AIRBUS', className: 'logo-airbus' },
-  { name: 'AIRBUS ATLANTIC', className: 'logo-atlantic' },
-  { name: "CHANTIERS DE L'ATLANTIQUE", className: 'logo-chantiers' },
-  { name: 'MANITOU GROUP', className: 'logo-manitou' },
-  { name: 'GESTAL', className: 'logo-gestal' },
-  { name: 'SABENA TECHNICS', className: 'logo-sabena' },
-  { name: 'NEOPOLIA', className: 'logo-neopolia' },
+  { name: 'Airbus', logo: '/ref-airbus.png' },
+  { name: 'Thales', logo: '/ref-thales.png' },
+  { name: 'Manitou Group', logo: '/ref-manitou.png' },
+  { name: "Chantiers de l'Atlantique", logo: '/ref-chantiers.png' },
+  { name: 'Gestal', logo: '/ref-gestal.png' },
+  { name: 'Gereje Corporate Finance', logo: '/ref-gereje.png' },
 ];
 
 
@@ -103,7 +101,7 @@ export default function Home() {
 
         <section id="references" className="references"><div className="container">
           <p className="section-kicker">Références & expérience</p><h2>Une expérience acquise auprès d'organisations industrielles exigeantes.</h2>
-          <div className="ref-grid">{references.map((r) => <span className={r.className} key={r.name}>{r.name}</span>)}</div>
+          <div className="ref-grid">{references.map((r) => <span className="ref-logo-card" key={r.name}><img src={r.logo} alt={r.name} /></span>)}</div>
         </div></section>
 
         <section id="parcours" className="career"><div className="container"><h2>Mon parcours de dirigeant</h2><div className="accent" /><div className="timeline">{timeline.map(([company, role]) => <div key={company}><strong>{company}</strong><span>{role}</span></div>)}</div><p className="career-quote">Parce que les meilleures décisions sont prises par ceux qui ont déjà vécu les enjeux de l'entreprise.</p></div></section>
