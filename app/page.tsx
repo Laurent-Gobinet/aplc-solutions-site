@@ -34,6 +34,12 @@ const insights = [
   ['Levée de fonds', "Un investisseur finance une trajectoire crédible, pas seulement une ambition."],
 ];
 
+const metrics = [
+  ['30+', "années d'expérience industrielle"],
+  ['7', 'étapes de direction et conseil'],
+  ['PME & ETI', 'accompagnement de dirigeants'],
+];
+
 const timeline = [
   ['THALES', 'Responsable des Coopérations Grands Comptes'],
   ['AIRBUS', 'Directeur Achats Filiale'],
@@ -64,8 +70,19 @@ export default function Home() {
             <div className="accent" />
             <p className="hero-lead">Une approche sur mesure, de dirigeant à dirigeant, pour accompagner les décisions qui engagent durablement l'avenir d'une entreprise.</p>
             <p className="hero-sub">De la réflexion stratégique au déploiement opérationnel, APLC accompagne les dirigeants de PME et d'ETI dans leurs projets de croissance, financement, acquisition, cession et transformation.</p>
-            <div className="hero-buttons"><a className="btn primary" href="#enjeux">Identifier vos enjeux <span>→</span></a><a className="btn secondary" href="#contact">Demander un échange <span>→</span></a></div>
+            <div className="hero-buttons"><a className="btn primary" href="#enjeux">Découvrir notre approche <span>→</span></a><a className="btn secondary" href="#contact">Prendre contact <span>→</span></a></div>
           </div></div>
+        </section>
+
+        <section className="metrics-band">
+          <div className="container metrics-grid">
+            {metrics.map(([value, label]) => (
+              <div key={value}>
+                <strong>{value}</strong>
+                <span>{label}</span>
+              </div>
+            ))}
+          </div>
         </section>
 
         <section id="approche" className="approach section-dark"><div className="container">
@@ -119,10 +136,10 @@ export default function Home() {
           <a className="btn primary" href="#contact">Demander un premier échange <span>→</span></a>
         </div></section>
 
-        <section id="contact" className="contact-section"><div className="contact-photo"><img src="/photo-contact-rencontre.jpg" alt="Rencontre professionnelle en extérieur" /></div><div className="container contact-grid"><div className="contact-card"><h2>Échangeons.</h2><div className="accent" /><p>Vous préparez une décision stratégique ? Prenons une heure pour échanger sur votre projet, en toute confidentialité.</p></div><div className="contact-details"><p>☎ <a href="tel:+33630255807">06 30 25 58 07</a></p><p>✉ <a href="mailto:laurent.gobinet@aplc-solutions.fr">laurent.gobinet@aplc-solutions.fr</a></p><p>⌖ Basé à Nantes<br />Interventions en France et à l'international</p><p>in <a href="https://www.linkedin.com/in/laurent-gobinet-21663930" target="_blank" rel="noopener">linkedin.com/in/laurent-gobinet</a></p></div><div className="qr"><img src="/qr-contact-laurent-gobinet.png" alt="QR code contact Laurent Gobinet" /><span>Ajouter à vos contacts</span></div></div></section>
+        <section id="contact" className="contact-section"><div className="contact-photo"><img src="/photo-contact-rencontre.jpg" alt="Rencontre professionnelle en extérieur" /></div><div className="container contact-grid"><div className="contact-card"><h2>Échangeons.</h2><div className="accent" /><p>Vous préparez une décision stratégique ? Prenons une heure pour échanger sur votre projet, en toute confidentialité.</p></div><div className="contact-details"><p>☎ <a href="tel:+33630255807">06 30 25 58 07</a></p><p>✉ <a href="mailto:laurent.gobinet@aplc-solutions.fr">laurent.gobinet@aplc-solutions.fr</a></p><p>⌖ Basé à Nantes<br />Interventions en France et à l'international</p><p>in <a href="https://www.linkedin.com/in/laurent-gobinet-21663930" target="_blank" rel="noopener">linkedin.com/in/laurent-gobinet</a></p><a className="mail-cta" href="mailto:laurent.gobinet@aplc-solutions.fr?subject=Premier%20échange%20APLC%20Solutions">Envoyer un message</a></div><div className="qr"><img src="/qr-contact-laurent-gobinet.png" alt="QR code contact Laurent Gobinet" /><span>Ajouter à vos contacts</span></div></div></section>
       </main>
 
-      <footer><div className="container footer-grid"><img src="/logo-aplc-chrome-small.png" alt="APLC" /><p>Anticiper aujourd'hui,<br />créer de la valeur demain.</p><p>© APLC Solutions – Tous droits réservés</p></div></footer>
+      <footer><div className="container footer-grid"><img src="/logo-aplc-chrome-small.png" alt="APLC" /><p>Anticiper aujourd'hui,<br />créer de la valeur demain.</p><p>© APLC Solutions – aplc-solutions.fr</p></div></footer>
     </>
   );
 }

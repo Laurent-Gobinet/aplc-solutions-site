@@ -1,15 +1,14 @@
-# APLC Solutions - V5 Real Logos
+# APLC Solutions - V6 Final Premium
 
-Version V5 avec :
-- logos réels fournis intégrés dans `/public` ;
-- références simplifiées : Airbus uniquement, sans Airbus Atlantic ;
-- suppression de DAHER et CNES ;
-- références affichées sous forme de cartes logos.
+Version V6 candidate finale :
+- photos intégrées localement ;
+- logos réels fournis intégrés ;
+- Airbus simplifié, suppression Airbus Atlantic, DAHER et CNES ;
+- SEO renforcé ;
+- favicon, robots et sitemap ;
+- CTA final ;
+- bouton email prêt à l'emploi ;
+- endpoint API contact prêt à connecter plus tard ;
+- bandeau indicateurs d'expérience.
 
-Références incluses :
-- Airbus
-- Thales
-- Manitou Group
-- Chantiers de l'Atlantique
-- Gestal
-- Gereje Corporate Finance
+Déposez le contenu du dossier dans GitHub en conservant app/ et public/.
