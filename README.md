@@ -1,14 +1,10 @@
-# APLC Solutions - V6 Final Premium
+# APLC Solutions - V7 Parcours clarifié
 
-Version V6 candidate finale :
-- photos intégrées localement ;
-- logos réels fournis intégrés ;
-- Airbus simplifié, suppression Airbus Atlantic, DAHER et CNES ;
-- SEO renforcé ;
-- favicon, robots et sitemap ;
-- CTA final ;
-- bouton email prêt à l'emploi ;
-- endpoint API contact prêt à connecter plus tard ;
-- bandeau indicateurs d'expérience.
+Version V7 :
+- parcours du dirigeant entièrement repensé ;
+- frise remplacée par des cartes chronologiques lisibles ;
+- logos intégrés dans chaque étape ;
+- clarification de la montée en responsabilités ;
+- photos utilisées localement depuis `/public`.
 
-Déposez le contenu du dossier dans GitHub en conservant app/ et public/.
+Les photos sont bien présentes dans `/public`. Si elles ne s'affichent pas après déploiement, forcer le rechargement du navigateur ou vérifier que le contenu du dossier `public/` a bien été envoyé dans GitHub.

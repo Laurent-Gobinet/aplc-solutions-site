@@ -41,13 +41,48 @@ const metrics = [
 ];
 
 const timeline = [
-  ['THALES', 'Responsable des Coopérations Grands Comptes'],
-  ['AIRBUS', 'Directeur Achats Filiale'],
-  ["CHANTIERS DE L'ATLANTIQUE", 'Directeur Achats Groupe'],
-  ['MANITOU', 'Directeur Achats Groupe'],
-  ['GESTAL', 'Président'],
-  ['GEREJE', 'Partner'],
-  ['APLC', 'Président'],
+  {
+    company: 'THALES',
+    role: 'Responsable des Coopérations Grands Comptes',
+    angle: 'Coopérations industrielles, grands comptes et environnements complexes.',
+    logo: '/ref-thales.png',
+  },
+  {
+    company: 'AIRBUS',
+    role: 'Directeur Achats Filiale',
+    angle: 'Pilotage achats, performance fournisseurs et enjeux aéronautiques.',
+    logo: '/ref-airbus.png',
+  },
+  {
+    company: "CHANTIERS DE L'ATLANTIQUE",
+    role: 'Directeur Achats Groupe',
+    angle: 'Achats stratégiques, grands projets industriels et chaîne de valeur navale.',
+    logo: '/ref-chantiers.png',
+  },
+  {
+    company: 'MANITOU GROUP',
+    role: 'Directeur Achats Groupe',
+    angle: 'Transformation achats, structuration internationale et performance opérationnelle.',
+    logo: '/ref-manitou.png',
+  },
+  {
+    company: 'GESTAL',
+    role: 'Président',
+    angle: "Direction d'ETI industrielle, croissance, gouvernance et création de valeur.",
+    logo: '/ref-gestal.png',
+  },
+  {
+    company: 'GEREJE CORPORATE FINANCE',
+    role: 'Partner – Fusions & Acquisitions',
+    angle: "Accompagnement d'opérations stratégiques, transmissions, acquisitions et levées de fonds.",
+    logo: '/ref-gereje.png',
+  },
+  {
+    company: 'APLC SOLUTIONS',
+    role: 'Président – Conseil aux dirigeants',
+    angle: 'Accompagnement de dirigeant à dirigeant, de la stratégie au déploiement opérationnel.',
+    logo: '/logo-aplc-chrome-small.png',
+  },
 ];
 
 export default function Home() {
@@ -121,20 +156,41 @@ export default function Home() {
           <div className="ref-grid">{references.map((r) => <span className="ref-logo-card" key={r.name}><img src={r.logo} alt={r.name} /></span>)}</div>
         </div></section>
 
-        <section id="parcours" className="career"><div className="container"><h2>Mon parcours de dirigeant</h2><div className="accent" /><div className="timeline">{timeline.map(([company, role]) => <div key={company}><strong>{company}</strong><span>{role}</span></div>)}</div><p className="career-quote">Parce que les meilleures décisions sont prises par ceux qui ont déjà vécu les enjeux de l'entreprise.</p></div></section>
+        <section id="parcours" className="career">
+          <div className="container">
+            <div className="career-head">
+              <div>
+                <p className="section-kicker left">Parcours du dirigeant</p>
+                <h2>Une double expérience de direction industrielle et de conseil stratégique.</h2>
+              </div>
+              <p>
+                Plus de trente années passées au cœur d'organisations industrielles exigeantes,
+                puis au service de dirigeants engagés dans des opérations de croissance,
+                financement, acquisition, cession ou transformation.
+              </p>
+            </div>
 
+            <div className="journey">
+              {timeline.map((step, index) => (
+                <article className="journey-card" key={step.company}>
+                  <div className="journey-index">{String(index + 1).padStart(2, '0')}</div>
+                  <div className="journey-logo">
+                    <img src={step.logo} alt={step.company} />
+                  </div>
+                  <div className="journey-content">
+                    <h3>{step.company}</h3>
+                    <strong>{step.role}</strong>
+                    <p>{step.angle}</p>
+                  </div>
+                </article>
+              ))}
+            </div>
 
-        <section className="insights"><div className="container">
-          <p className="section-kicker">Regards de dirigeant</p>
-          <h2>Des analyses concrètes pour préparer les décisions qui engagent l'avenir.</h2>
-          <div className="insight-grid">{insights.map(([title, text]) => <article key={title}><span>{title}</span><p>{text}</p></article>)}</div>
-        </div></section>
-
-        <section className="final-cta"><div className="container">
-          <h2>Vous préparez une décision stratégique ?</h2>
-          <p>Prenons une heure pour comprendre votre projet, vos enjeux et les conditions de réussite.</p>
-          <a className="btn primary" href="#contact">Demander un premier échange <span>→</span></a>
-        </div></section>
+            <p className="career-quote">
+              Parce que les meilleures décisions sont prises par ceux qui ont déjà vécu les enjeux de l'entreprise.
+            </p>
+          </div>
+        </section>
 
         <section id="contact" className="contact-section"><div className="contact-photo"><img src="/photo-contact-rencontre.jpg" alt="Rencontre professionnelle en extérieur" /></div><div className="container contact-grid"><div className="contact-card"><h2>Échangeons.</h2><div className="accent" /><p>Vous préparez une décision stratégique ? Prenons une heure pour échanger sur votre projet, en toute confidentialité.</p></div><div className="contact-details"><p>☎ <a href="tel:+33630255807">06 30 25 58 07</a></p><p>✉ <a href="mailto:laurent.gobinet@aplc-solutions.fr">laurent.gobinet@aplc-solutions.fr</a></p><p>⌖ Basé à Nantes<br />Interventions en France et à l'international</p><p>in <a href="https://www.linkedin.com/in/laurent-gobinet-21663930" target="_blank" rel="noopener">linkedin.com/in/laurent-gobinet</a></p><a className="mail-cta" href="mailto:laurent.gobinet@aplc-solutions.fr?subject=Premier%20échange%20APLC%20Solutions">Envoyer un message</a></div><div className="qr"><img src="/qr-contact-laurent-gobinet.png" alt="QR code contact Laurent Gobinet" /><span>Ajouter à vos contacts</span></div></div></section>
       </main>
