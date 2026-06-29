@@ -1,21 +1,56 @@
-# APLC Solutions - V10 Final Placeholders
+# APLC Solutions - Site internet V11
 
-Cette V10 prépare la structure finale propre :
-- aucune ancienne frise ;
-- parcours dirigeant uniquement sous forme de cartes ;
-- toutes les images utilisent des noms définitifs dans `/public` ;
-- les visuels actuels sont des placeholders propres, à remplacer par les vraies photos.
+Version de finalisation du site APLC Solutions, développée à partir de la V10 Next.js.
 
-Pour finaliser :
-1. Remplacer dans `/public` les fichiers :
-   - hero-aplc.jpg
-   - anchor-satellite.jpg
-   - adour-helice-navire.jpg
-   - cap200-comite-investissement.jpg
-   - giddy-up-defile.jpg
-   - neopolia-atelier.jpg
-   - pourquoi-aplc-reunion.jpg
-   - contact-rencontre.jpg
-2. Garder exactement les mêmes noms de fichiers.
-3. Commit GitHub.
-4. Vercel redéploie automatiquement.
+## Objectif de la V11
+
+Créer un site premium, sobre et crédible, comparable à la présence digitale d'un cabinet de conseil haut de gamme :
+
+- positionnement clair : conseil aux dirigeants de PME et ETI ;
+- promesse renforcée : de la stratégie au déploiement opérationnel ;
+- design plus institutionnel, confidentiel et haut de gamme ;
+- parcours du dirigeant clarifié et lisible ;
+- suppression définitive de l'ancienne frise ;
+- intégration des photos et logos depuis le dossier `/public` ;
+- responsive desktop, tablette et mobile ;
+- base Next.js propre, prête à déployer sur Vercel.
+
+## Démarrage local
+
+```bash
+npm install
+npm run dev
+```
+
+Puis ouvrir :
+
+```text
+http://localhost:3000
+```
+
+## Build de production
+
+```bash
+npm run build
+npm run start
+```
+
+## Assets principaux
+
+Les visuels sont référencés dans le code avec les noms suivants :
+
+- `/public/hero-aplc.jpg`
+- `/public/laurent-gobinet-portrait.jpg`
+- `/public/pourquoi-aplc-reunion.jpg`
+- `/public/contact-rencontre.jpg`
+- `/public/anchor-satellite.jpg`
+- `/public/adour-helice-navire.jpg`
+- `/public/cap200-comite-investissement.jpg`
+- `/public/giddy-up-defile.jpg`
+- `/public/neopolia-atelier.jpg`
+- logos de référence : `/public/ref-*.png`
+- QR contact : `/public/qr-contact-laurent-gobinet.png`
+
+## Déploiement
+
+Le projet est compatible avec Vercel. Après dépôt sur GitHub, Vercel peut redéployer automatiquement la V11.
