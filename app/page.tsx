@@ -29,11 +29,11 @@ const method = [
 ];
 
 const projects = [
-  { img: '/anchor-satellite.jpg', title: 'ANCHOR', eyebrow: 'Innovation industrielle', text: 'Transformation d’une technologie brevetée en trajectoire industrielle et financière.', tags: 'Spatial · Défense · Composites' },
-  { img: '/adour-helice-navire.jpg', title: 'ADOUR', eyebrow: 'Croissance externe', text: 'Structuration d’une acquisition industrielle créatrice de valeur.', tags: 'Industrie navale · Reprise · Développement' },
-  { img: '/cap200-comite-investissement.jpg', title: 'CAP200', eyebrow: 'Investissement territorial', text: "Construction d'une plateforme d'investissement dédiée aux PME régionales.", tags: 'Investisseurs · PME · Territoires' },
-  { img: '/giddy-up-defile.jpg', title: 'GIDDY UP', eyebrow: 'Marque internationale', text: "Création d'un modèle événementiel et média à vocation internationale.", tags: 'Mode · Luxe · Média · Événementiel' },
-  { img: '/neopolia-atelier.jpg', title: 'NEOPOLIA', eyebrow: 'Écosystème industriel', text: "Développement d'opportunités collectives au sein d'un réseau industriel exigeant.", tags: 'Industrie · Innovation · Coopérations' },
+  { img: '/photo-anchor.jpg', title: 'ANCHOR', eyebrow: 'Innovation industrielle', text: 'Transformation d’une technologie brevetée en trajectoire industrielle et financière.', tags: 'Spatial · Défense · Composites' },
+  { img: '/photo-adour.jpg', title: 'ADOUR', eyebrow: 'Croissance externe', text: 'Structuration d’une acquisition industrielle créatrice de valeur.', tags: 'Industrie navale · Reprise · Développement' },
+  { img: '/photo-cap200.jpg', title: 'CAP200', eyebrow: 'Investissement territorial', text: "Construction d'une plateforme d'investissement dédiée aux PME régionales.", tags: 'Investisseurs · PME · Territoires' },
+  { img: '/photo-giddy.jpg', title: 'GIDDY UP', eyebrow: 'Marque internationale', text: "Création d'un modèle événementiel et média à vocation internationale.", tags: 'Mode · Luxe · Média · Événementiel' },
+  { img: '/photo-neopolia.jpg', title: 'NEOPOLIA', eyebrow: 'Écosystème industriel', text: "Développement d'opportunités collectives au sein d'un réseau industriel exigeant.", tags: 'Industrie · Innovation · Coopérations' },
 ];
 
 const references = [
@@ -52,7 +52,7 @@ const journey = [
   { company: 'MANITOU GROUP', role: 'Directeur achats groupe', angle: 'Transformation achats, structuration internationale et performance opérationnelle.', logo: '/ref-manitou.png' },
   { company: 'GESTAL', role: 'Président', angle: "Direction d'ETI industrielle, croissance, gouvernance, équipes et création de valeur.", logo: '/ref-gestal.png' },
   { company: 'GEREJE CORPORATE FINANCE', role: 'Partner – Fusions & Acquisitions', angle: "Accompagnement d'opérations stratégiques, transmissions, acquisitions et levées de fonds.", logo: '/ref-gereje.png' },
-  { company: 'APLC SOLUTIONS', role: 'Président – Conseil aux dirigeants', angle: 'Accompagnement de dirigeant à dirigeant, de la stratégie au déploiement opérationnel.', logo: '/logo-aplc-chrome-small.png' },
+  { company: 'APLC SOLUTIONS', role: 'Président – Conseil aux dirigeants', angle: 'Accompagnement de dirigeant à dirigeant, de la stratégie au déploiement opérationnel.', logo: '/logo-aplc-original-header.png' },
 ];
 
 
@@ -61,8 +61,8 @@ const structuredData = {
   '@type': 'ProfessionalService',
   name: 'APLC Solutions',
   url: 'https://aplc-solutions.fr',
-  logo: 'https://aplc-solutions.fr/logo-aplc-chrome.png',
-  image: 'https://aplc-solutions.fr/logo-aplc-chrome.png',
+  logo: 'https://aplc-solutions.fr/logo-aplc-original-header.png',
+  image: 'https://aplc-solutions.fr/logo-aplc-original-header.png',
   founder: {
     '@type': 'Person',
     name: 'Laurent Gobinet',
@@ -174,7 +174,7 @@ export default function Home() {
                 <article><h3>Exécution opérationnelle</h3><p>Un accompagnement qui ne s'arrête pas au diagnostic et reste mobilisé jusqu'à la mise en œuvre.</p></article>
               </div>
             </div>
-            <figure className="why-photo"><img src="/pourquoi-aplc-reunion.jpg" alt="Réunion de travail stratégique" /></figure>
+            <figure className="why-photo"><img src="/photo-pourquoi-aplc.jpg" alt="Réunion de travail stratégique" /></figure>
           </div>
         </section>
 
@@ -221,7 +221,7 @@ export default function Home() {
         </section>
 
         <section id="contact" className="contact-section">
-          <figure className="contact-photo"><img src="/contact-rencontre.jpg" alt="Rencontre professionnelle" /></figure>
+          <figure className="contact-photo"><img src="/photo-contact-rencontre.jpg" alt="Rencontre professionnelle" /></figure>
           <div className="container contact-grid">
             <div className="contact-card"><p className="section-kicker left">Contact</p><h2>Échangeons en toute confidentialité.</h2><div className="divider" /><p>Vous préparez une décision structurante ? APLC Solutions vous accompagne dans la clarification, la structuration et la mise en œuvre.</p></div>
             <div className="contact-details"><p><span>Téléphone</span><a href="tel:+33630255807">06 30 25 58 07</a></p><p><span>Email</span><a href="mailto:laurent.gobinet@aplc-solutions.fr">laurent.gobinet@aplc-solutions.fr</a></p><p><span>Implantation</span>Basé à Nantes<br />Interventions en France et à l'international</p><p><span>LinkedIn</span><a href="https://www.linkedin.com/in/laurent-gobinet-21663930" target="_blank" rel="noopener">linkedin.com/in/laurent-gobinet</a></p><a className="mail-cta" href="mailto:laurent.gobinet@aplc-solutions.fr?subject=Premier%20échange%20APLC%20Solutions">Envoyer un message</a></div>
@@ -230,7 +230,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer><div className="container footer-grid"><img src="/logo-aplc-chrome-small.png" alt="APLC" /><p>Anticiper aujourd'hui,<br />créer de la valeur demain.</p><p>© APLC Solutions – aplc-solutions.fr</p></div></footer>
+      <footer><div className="container footer-grid"><img src="/logo-aplc-original-header.png" alt="APLC" /><p>Anticiper aujourd'hui,<br />créer de la valeur demain.</p><p>© APLC Solutions – aplc-solutions.fr</p></div></footer>
     </>
   );
 }

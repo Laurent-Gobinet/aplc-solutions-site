@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   icons: {
     icon: '/favicon.svg',
     shortcut: '/favicon.svg',
-    apple: '/logo-aplc-chrome-small.png',
+    apple: '/logo-aplc-original-header.png',
   },
   robots: {
     index: true,
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/logo-aplc-chrome.png',
+        url: '/logo-aplc-original-header.png',
         width: 1200,
         height: 630,
         alt: 'APLC Solutions - Conseil aux dirigeants',
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: siteTitle,
     description: siteDescription,
-    images: ['/logo-aplc-chrome.png'],
+    images: ['/logo-aplc-original-header.png'],
   },
 };
 
