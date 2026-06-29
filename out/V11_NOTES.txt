@@ -1,0 +1,11 @@
+APLC Solutions - V11
+
+Principales évolutions :
+- Refonte premium du design global : sobriété, profondeur, hiérarchie typographique, boutons arrondis, cartes plus qualitatives.
+- Réécriture complète du CSS pour supprimer les accumulations V5/V6/V7/V8/V9/V10.
+- Repositionnement éditorial : cabinet de conseil haut de gamme, conseil de dirigeant à dirigeant, stratégie jusqu'au déploiement.
+- Nouvelle section Expertises : acquisition, cession, levée de fonds, transformation, retournement, projets industriels.
+- Parcours du dirigeant clarifié en cartes homogènes, sans frise.
+- Références conservées : Airbus, Thales, Manitou Group, Chantiers de l'Atlantique, Gestal, Gereje Corporate Finance.
+- Photos locales conservées avec noms définitifs.
+- Optimisation responsive desktop / tablette / mobile.
