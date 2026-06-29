@@ -55,6 +55,38 @@ const journey = [
   { company: 'APLC SOLUTIONS', role: 'Président – Conseil aux dirigeants', angle: 'Accompagnement de dirigeant à dirigeant, de la stratégie au déploiement opérationnel.', logo: '/logo-aplc-chrome-small.png' },
 ];
 
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  name: 'APLC Solutions',
+  url: 'https://aplc-solutions.fr',
+  logo: 'https://aplc-solutions.fr/logo-aplc-chrome.png',
+  image: 'https://aplc-solutions.fr/logo-aplc-chrome.png',
+  founder: {
+    '@type': 'Person',
+    name: 'Laurent Gobinet',
+    jobTitle: 'Président',
+  },
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Nantes',
+    addressCountry: 'FR',
+  },
+  areaServed: ['France', 'Pays de la Loire', 'Nantes'],
+  description: "Conseil aux dirigeants de PME et d'ETI en croissance externe, acquisition, cession, levée de fonds, transformation et déploiement opérationnel.",
+  sameAs: ['https://www.linkedin.com/in/laurent-gobinet-21663930'],
+  knowsAbout: [
+    'Conseil aux dirigeants',
+    'Fusions acquisitions',
+    'Croissance externe',
+    'Cession entreprise',
+    'Levée de fonds',
+    'Transformation opérationnelle',
+    'Conseil industriel',
+  ],
+};
+
 const insights = [
   ['Vision dirigeant', "Une décision stratégique n'est jamais seulement financière : elle engage une entreprise, des équipes, des partenaires et une trajectoire."],
   ['Exigence terrain', "Les plans robustes sont ceux qui résistent au réel : contraintes industrielles, ressources disponibles, calendrier et exécution."],
@@ -64,9 +96,13 @@ const insights = [
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       <header className="site-header">
         <div className="container nav">
-          <a className="brand" href="#top" aria-label="APLC Solutions"><img src="/logo-aplc-chrome.png" alt="APLC Solutions" /><span>Accélérer pour la croissance</span></a>
+          <a className="brand" href="#top" aria-label="APLC Solutions"><img src="/logo-aplc-chrome-small.png" alt="APLC Solutions" /><span>Accélérer pour la croissance</span></a>
           <nav className="desktop-nav" aria-label="Navigation principale">
             <a href="#approche">Approche</a>
             <a href="#offre">Expertises</a>

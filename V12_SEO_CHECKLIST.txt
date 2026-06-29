@@ -1,0 +1,12 @@
+APLC Solutions - Checklist V12 SEO
+
+1. Uploader la V12 dans GitHub.
+2. Commit : V12 - SEO et referencement Google.
+3. Attendre le deploiement Vercel.
+4. Verifier https://aplc-solutions.fr.
+5. Verifier https://aplc-solutions.fr/robots.txt.
+6. Verifier https://aplc-solutions.fr/sitemap.xml.
+7. Ajouter aplc-solutions.fr dans Google Search Console.
+8. Valider la propriete par DNS.
+9. Soumettre https://aplc-solutions.fr/sitemap.xml.
+10. Demander l'indexation de https://aplc-solutions.fr.

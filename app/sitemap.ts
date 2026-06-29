@@ -1,5 +1,15 @@
 import type { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [{ url: 'https://aplc-solutions.fr', lastModified: new Date(), changeFrequency: 'weekly', priority: 1 }];
+  const baseUrl = 'https://aplc-solutions.fr';
+  const lastModified = new Date();
+
+  return [
+    {
+      url: baseUrl,
+      lastModified,
+      changeFrequency: 'weekly',
+      priority: 1,
+    },
+  ];
 }
