@@ -16,10 +16,6 @@ const offers = [
     text: "Passer de la feuille de route stratégique à l'exécution terrain, avec des priorités claires et un pilotage pragmatique.",
   },
   {
-    title: 'Restructuration & retournement',
-    text: 'Retrouver des marges de manœuvre, restaurer la confiance et sécuriser les décisions sensibles dans les périodes complexes.',
-  },
-  {
     title: 'Projets industriels structurants',
     text: "Accélérer les projets combinant stratégie, opérations, financement, partenaires industriels et gouvernance.",
   },
@@ -41,12 +37,12 @@ const projects = [
 ];
 
 const references = [
-  { name: 'Airbus', logo: '/ref-airbus.png' },
-  { name: 'Thales', logo: '/ref-thales.png' },
-  { name: 'Manitou Group', logo: '/ref-manitou.png' },
-  { name: "Chantiers de l'Atlantique", logo: '/ref-chantiers.png' },
-  { name: 'Gestal', logo: '/ref-gestal.png' },
-  { name: 'Gereje Corporate Finance', logo: '/ref-gereje.png' },
+  { name: 'GESTAL', logo: '/ref-gestal.png', mission: 'Acquisition de la société ROMA2S en Roumanie' },
+  { name: 'HALGAND', logo: '/ref-halgand.png', mission: 'Élaboration et accompagnement d’un projet de croissance via build-up' },
+  { name: 'SINFONY', logo: '/ref-sinfony.png', mission: 'Accompagnement opérationnel du plan de transformation et de build-up' },
+  { name: 'DIMATEX', logo: '/ref-dimatex.png', mission: 'Accompagnement d’un projet de cession' },
+  { name: 'IGUANA YACHTS', logo: '/ref-iguana-yachts.png', mission: 'Accompagnement du plan stratégique' },
+  { name: 'ASPIPRO', logo: '/ref-aspipro.png', mission: 'Accompagnement du plan stratégique et financier' },
 ];
 
 const journey = [
@@ -160,9 +156,9 @@ export default function Home() {
 
         <section id="references" className="references">
           <div className="container">
-            <p className="section-kicker">Références & expérience</p>
-            <h2>Une expérience acquise auprès d'organisations industrielles exigeantes.</h2>
-            <div className="ref-grid">{references.map((r) => <span className="ref-logo-card" key={r.name}><img src={r.logo} alt={r.name} /></span>)}</div>
+            <p className="section-kicker">Références conseil</p>
+            <h2>Quelques exemples de dossiers accompagnés en M&A, stratégie et transformation.</h2>
+            <div className="ref-grid">{references.map((r) => <article className="ref-logo-card" key={r.name}><div className="ref-logo"><img src={r.logo} alt={r.name} /></div><p>{r.mission}</p></article>)}</div>
           </div>
         </section>
 

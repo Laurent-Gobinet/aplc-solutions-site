@@ -54,3 +54,11 @@ Les visuels sont référencés dans le code avec les noms suivants :
 ## Déploiement
 
 Le projet est compatible avec Vercel. Après dépôt sur GitHub, Vercel peut redéployer automatiquement la V11.
+
+
+## Ajustements V11 - références conseil
+
+- Remplacement de la grille de références institutionnelles par des exemples de dossiers conseil : GESTAL / ROMA2S, HALGAND, SINFONY, DIMATEX, IGUANA YACHTS, ASPIPRO.
+- Ajout des logos fournis dans `public/`.
+- Suppression de l'expertise `Restructuration & retournement`.
+- Les photos finales restent à intégrer dès réception.
