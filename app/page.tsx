@@ -102,7 +102,7 @@ export default function Home() {
       />
       <header className="site-header">
         <div className="container nav">
-          <a className="brand" href="#top" aria-label="APLC Solutions"><img src="/logo-aplc-chrome-small.png" alt="APLC Solutions" /><span>Accélérer pour la croissance</span></a>
+          <a className="brand" href="#top" aria-label="APLC Solutions"><img src="/logo-aplc-header.png" alt="APLC Solutions" /><span>Accélérer pour la croissance</span></a>
           <nav className="desktop-nav" aria-label="Navigation principale">
             <a href="#approche">Approche</a>
             <a href="#offre">Expertises</a>
