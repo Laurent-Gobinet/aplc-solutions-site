@@ -87,3 +87,13 @@
   opacity:1!important;
   visibility:visible!important;
 }
+
+/* V9 hard cleanup */
+.timeline{display:none!important}
+.hero-photo{background-image:url('/photo-hero-industrie.jpg')!important}
+.project-card img,.why-photo img,.contact-photo img,.hero-portrait img,.ref-logo-card img{display:block!important;opacity:1!important;visibility:visible!important}
+
+/* V10 final placeholders */
+.timeline{display:none!important}
+.hero-photo{background-image:url('/hero-aplc.jpg')!important}
+.project-card img,.why-photo img,.contact-photo img,.hero-portrait img,.ref-logo-card img{display:block!important;opacity:1!important;visibility:visible!important}
