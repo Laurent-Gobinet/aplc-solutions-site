@@ -1,10 +1,11 @@
-# APLC Solutions - V7 Parcours clarifié
+# APLC Solutions - V8 No Frise + Photos OK
 
-Version V7 :
-- parcours du dirigeant entièrement repensé ;
-- frise remplacée par des cartes chronologiques lisibles ;
-- logos intégrés dans chaque étape ;
-- clarification de la montée en responsabilités ;
-- photos utilisées localement depuis `/public`.
+Corrections V8 :
+- suppression définitive de l'ancienne frise en double ;
+- conservation uniquement des cartes chronologiques du parcours dirigeant ;
+- forçage des photos locales depuis `/public` ;
+- ajout d'un fichier `public/photos-manifest.txt` pour vérifier que les photos sont bien présentes.
 
-Les photos sont bien présentes dans `/public`. Si elles ne s'affichent pas après déploiement, forcer le rechargement du navigateur ou vérifier que le contenu du dossier `public/` a bien été envoyé dans GitHub.
+Important pour GitHub :
+- bien envoyer le dossier `public/` complet ;
+- vérifier que GitHub affiche bien les fichiers `photo-anchor.jpg`, `photo-adour.jpg`, etc. dans `/public`.

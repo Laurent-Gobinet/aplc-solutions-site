@@ -66,3 +66,24 @@
 .career .timeline{display:none}
 .career-quote{margin-top:34px}
 @media(max-width:980px){.career-head{grid-template-columns:1fr;gap:18px}.career-head h2{font-size:30px}.journey-card{grid-template-columns:1fr;gap:14px}.journey-logo{justify-content:flex-start}}
+
+/* V8 - suppression definitive de l'ancienne frise */
+.timeline,
+.career .timeline,
+.timeline:before,
+.timeline div:before{
+  display:none!important;
+}
+.career-quote{
+  display:block!important;
+}
+/* V8 - photos locales */
+.hero-photo{
+  background-image:url('/photo-hero-industrie.jpg')!important;
+}
+.why-photo img,
+.contact-photo img,
+.project-card img{
+  opacity:1!important;
+  visibility:visible!important;
+}

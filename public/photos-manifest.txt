@@ -1,0 +1,16 @@
+Photos et logos inclus dans public/ :
+photo-hero-industrie.jpg - 69544 bytes
+photo-pourquoi-aplc.jpg - 32912 bytes
+photo-contact-rencontre.jpg - 38326 bytes
+photo-anchor.jpg - 90421 bytes
+photo-adour.jpg - 29876 bytes
+photo-cap200.jpg - 37166 bytes
+photo-giddy.jpg - 71426 bytes
+photo-neopolia.jpg - 33125 bytes
+laurent-gobinet-portrait.jpg - 86995 bytes
+ref-airbus.png - 19103 bytes
+ref-thales.png - 27067 bytes
+ref-manitou.png - 27652 bytes
+ref-chantiers.png - 44941 bytes
+ref-gestal.png - 30826 bytes
+ref-gereje.png - 52214 bytes
